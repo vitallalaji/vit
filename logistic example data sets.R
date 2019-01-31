@@ -1,5 +1,6 @@
-###
+###i'm creating logistics data using fabricatr
 library(fabricatr)
+#here i'm calling fabricatr i want 10000 rows with column name "price of the product" .on that columnn i want to populate the range between 1500 to 60000
 building_df <- fabricate(
   N = 10000,
   price_of_the_product=round(runif(N, 1500, 60000)))
@@ -8,7 +9,7 @@ building_df <- fabricate(
 
 # Start with existing data and add variables to hierarchical data
 # Note: do not provide N when adding variables to an existing level
-
+#here i'm using building_df data to add new varaibles to that data .and i want to populate samples on those varables
 
 logistic_data<-fabricate(
   data = building_df,
